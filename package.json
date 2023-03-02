@@ -2,9 +2,11 @@
   "name": "vue-component-state",
   "version": "0.1.0",
   "private": true,
+  "main": "./dist/vueComponentState.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build:npm": "vue-cli-service build --target lib --name vueComponentState src/index.js",
     "test": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint"
   },
@@ -38,5 +40,8 @@
     "ts-jest": "^27.0.4",
     "typescript": "~4.5.5",
     "vue-template-compiler": "^2.6.14"
-  }
+  },
+  "files": [
+    "dist/*"
+  ]
 }
